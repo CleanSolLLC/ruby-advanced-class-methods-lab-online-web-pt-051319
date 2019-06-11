@@ -56,16 +56,14 @@ class Song
     song
   end
 
-  def create_from_filename(filename)
-
+  def self.create_from_filename(filename)
     r1 = /\s[-.]\s/
     r2 = /[.]/
     file_info = filename.split(Regexp.union(r1, r2))
     artist_name = file_info[0]
     song_name = file_info[1]
-    song = self.new
-    binding.pry
+    song = self.new  
     @@all << song
-
+    binding.pry
   end
 end
