@@ -62,7 +62,7 @@ class Song
     file_info = filename.split(Regexp.union(r1, r2))
     artist_name = file_info[0]
     song_name = file_info[1]
-    song = self.new  
+    song = self.new
     @@all << song
     binding.pry
   end
