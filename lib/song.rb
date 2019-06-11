@@ -65,8 +65,8 @@ class Song
     song_name = file_info[1]
 
     song = self.new
-    artist_name = file_info[0]
-    song.name = file_info[1]
+    song.artist_name = artist_name
+    song.name = song_name
     @@all << song
     song
     binding.pry
