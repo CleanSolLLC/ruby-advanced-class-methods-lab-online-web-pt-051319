@@ -66,7 +66,7 @@ class Song
     song = self.new
     binding.pry
     @@all << song
-  
+
   end
 
 
