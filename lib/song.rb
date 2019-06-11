@@ -68,6 +68,4 @@ class Song
     @@all << song
 
   end
-
-
 end
